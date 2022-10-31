@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div id="form-container">
+        <div id="form-image">
+            <h1 style="color: rgba(255, 255, 255, 0.704); width: 100%; text-align: center; padding: 5px;"></h1>
+        </div>
+        <form>
+            <!-- <div id="form-image">
+            </div> -->
+            <h1>Student Info</h1>
+            <p>Enter the appropriate Details for placement recruitment drive</p>
+            <div>
+                <label>Name</label>
+                <br>
+                <input type="text" placeholder="Enter your name" class="inp">
+                <br>
+            </div>
+            
+            <div>
+                <label>Email Id</label>
+                <br>
+                <input type="email" placeholder="Enter your email address" class="inp">
+                <br>
+            </div>
+
+            <div>
+                <label>Phone Number</label>
+                <br>
+                <input type="number" placeholder="Enter your phone number" class="inp">
+                <br>
+            </div>
+
+            <div>
+                <label>Program</label>
+                <br>
+                <input type="radio" value="MCA" name="branch"><span>MCA</span>
+                <br>
+                <input type="radio" value="B.Tech" name="branch" style="margin-bottom: 15px;"><span>B.Tech</span>
+            </div>
+            <div>
+                <label>Choose Department</label>
+                <input list="dept" name="dept" class="inp" placeholder="Department">
+                <datalist name="dept" id="dept">
+                    <option value="computer science"></option>
+                    <option value="chemical"></option>
+                    <option value="Mechanical"></option>
+                    <option value="Electronics and communication"></option>
+                    <option value="Electrical"></option>
+                </datalist>
+            </div>
+
+            <div>
+                <label for="">Languages known</label>
+                <br>
+                <input type="checkbox"><span>Hindi</span>
+                <br>
+                <input type="checkbox"><span>English</span>
+                <br>
+                <input type="checkbox"><span>Malayalam</span>
+                <br><br>
+            </div>
+
+            <input type="submit" value="submit" id="submit-btn">
+        </form>
+    </div>
+    
+</body>
+</html>
