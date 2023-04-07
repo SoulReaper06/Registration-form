@@ -12,15 +12,15 @@
         <div id="form-image">
             <h1 style="color: rgba(255, 255, 255, 0.704); width: 100%; text-align: center; padding: 5px;"></h1>
         </div>
-        <form>
+        <form name="myForm" onsubmit="return validateForm()">
             <!-- <div id="form-image">
             </div> -->
-            <h1>Student Info</h1>
-            <p>Enter the appropriate Details for placement recruitment drive</p>
+            <h1>Sign Up Form</h1>
+            <!-- <p>Enter the appropriate Details for placement recruitment drive</p> -->
             <div>
-                <label>Name</label>
+                <label>Full Name</label>
                 <br>
-                <input type="text" placeholder="Enter your name" class="inp">
+                <input type="text" placeholder="Enter your name" class="inp" name="fname">
                 <br>
             </div>
             
@@ -34,43 +34,31 @@
             <div>
                 <label>Phone Number</label>
                 <br>
-                <input type="number" placeholder="Enter your phone number" class="inp">
+                <input type="number" placeholder="Enter your phone number" class="inp" name="phoneno">
                 <br>
             </div>
 
             <div>
-                <label>Program</label>
+                <label>Password</label>
                 <br>
-                <input type="radio" value="MCA" name="branch"><span>MCA</span>
+                <input type="password" placeholder="Enter your password" class="inp" name="password">
                 <br>
-                <input type="radio" value="B.Tech" name="branch" style="margin-bottom: 15px;"><span>B.Tech</span>
-            </div>
-            <div>
-                <label>Choose Department</label>
-                <input list="dept" name="dept" class="inp" placeholder="Department">
-                <datalist name="dept" id="dept">
-                    <option value="computer science"></option>
-                    <option value="chemical"></option>
-                    <option value="Mechanical"></option>
-                    <option value="Electronics and communication"></option>
-                    <option value="Electrical"></option>
-                </datalist>
             </div>
 
             <div>
-                <label for="">Languages known</label>
+                <label>Confirm Password</label>
                 <br>
-                <input type="checkbox"><span>Hindi</span>
+                <input type="text" placeholder="Enter your phone number" class="inp" name="cnfpassword">
                 <br>
-                <input type="checkbox"><span>English</span>
-                <br>
-                <input type="checkbox"><span>Malayalam</span>
-                <br><br>
             </div>
 
+
+    
             <input type="submit" value="submit" id="submit-btn">
         </form>
     </div>
+
+    <script src="script.js"></script>
     
 </body>
 </html>
